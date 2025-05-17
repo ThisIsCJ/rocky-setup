@@ -65,6 +65,12 @@ sudo hostnamectl set-hostname "$new_hostname"
 sudo sed -i "s/127.0.0.1.*/127.0.0.1   $new_hostname.$domain $new_hostname localhost localhost.localdomain localhost4 localhost4.localdomain4/" /etc/hosts
 sudo sed -i "s/::1.*/::1         $new_hostname.$domain $new_hostname localhost localhost.localdomain localhost6 localhost6.localdomain6/" /etc/hosts
 
+# Add server's actual IP to /etc/hosts
+ip_address=$(hostname -I | awk '{print $1}')
+if ! grep -q "$ip_address" /etc/hosts; then
+    echo "$ip_address   $new_hostname.$domain $new_hostname" | sudo tee -a /etc/hosts > /dev/null
+fi
+
 # Step 9: Check disk and partition size, then resize if requested
 DISK="/dev/sda"
 PARTITION="3"
