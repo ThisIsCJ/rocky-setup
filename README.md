@@ -1,4 +1,3 @@
-```markdown
 # System Setup and Configuration Script
 
 This Bash script automates the setup and configuration of a Linux system using `dialog` for interactive user input. It is designed to streamline initial system setup tasks such as updating packages, configuring the hostname, installing essential tools, and managing disk partitions.
@@ -63,4 +62,3 @@ This Bash script automates the setup and configuration of a Linux system using `
 ## 📄 License
 
 This script is provided as-is under the MIT License. Feel free to modify and distribute it as needed.
-```
