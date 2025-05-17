@@ -34,6 +34,7 @@ declare -A package_descriptions=(
     [parted]="Partition manipulation tool"
     [lvm2]="Logical Volume Manager utilities"
     [gdisk]="GPT partitioning tool"
+    [tree]="Recursively list the content of a directory"
 )
 
 # Step 4: Build checklist options
