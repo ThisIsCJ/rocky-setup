@@ -1,5 +1,3 @@
-It seems the multi-line string is still causing issues in the code execution environment. Instead, here is the fully formatted `README.md` content that you can copy and paste directly into your GitHub repository:
-
 ```markdown
 # System Setup and Configuration Script
 
@@ -66,5 +64,3 @@ This Bash script automates the setup and configuration of a Linux system using `
 
 This script is provided as-is under the MIT License. Feel free to modify and distribute it as needed.
 ```
-
-Would you like me to generate this as a downloadable `README.md` file now?
